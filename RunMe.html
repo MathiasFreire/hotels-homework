@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="module">
+    import {firstLetterToUpperCase} from "./task1.js";
+
+    alert(firstLetterToUpperCase("hellO WoRld!"));
+
+    import {correctPunctuation} from "./task1.js";
+
+    alert(correctPunctuation("Вот пример строки,в которой     используются знаки препинания.После знаков должны стоять пробелы , а перед знаками их быть не должно .    Если есть лишние подряд идущие пробелы, они должны быть устранены."))
+
+    import {countWords} from "./task1.js";
+
+    alert(countWords("Текст, в котором слово текст несколько раз встречается и слово тоже"));
+
+    import {uniqueWords} from "./task1.js";
+
+    alert(uniqueWords("Текст, в котором слово текст несколько раз встречается и слово тоже"));
+    import {sum} from "./task2.js";
+
+    console.log(sum("45654132135654684656513213113165464656513213131456461312656654564", "111111111111111111111111111111111111111111111111111111111111111111111111"));
+
+    import {diff} from "./task2.js";
+
+    console.log(diff("100000000000000000000000000000002000000000000000000000000000000000000", "8999999999999999999999999999999999999999999999999999999999999"));
+
+    import {mul} from "./task2.js";
+
+    console.log(mul("10000000000000000000000000000000000000000000000", "10000000000000000000000000000000000"));
+
+    import {div} from "./task2.js";
+
+    console.log(div("169", "13"));
+</script>
+<script src="task3.js">
+</script>
+</body>
+</html>
