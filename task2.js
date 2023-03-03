@@ -138,7 +138,15 @@ export function div(a, b) {
 
         if (round1 === round2) return "99999..."
 
-        return (+round1 / +round2).toString().slice(2, 7) + "...";
+        let buff = (+round1 / +round2).toString();
+
+        if (buff.length > 5) {
+            buff = buff.slice(2, 7) + "...";
+        } else {
+            buff = buff.slice(2);
+        }
+
+            return buff;
     }
 
 
